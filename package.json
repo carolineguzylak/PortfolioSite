@@ -1,0 +1,22 @@
+{
+  "name": "portfoliosite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile_sass": "node-sass sass/style.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carolineguzylak/Portfolio-Site.git"
+  },
+  "author": "Caroline Guzylak",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/carolineguzylak/Portfolio-Site/issues"
+  },
+  "homepage": "https://github.com/carolineguzylak/Portfolio-Site#readme",
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  }
+}

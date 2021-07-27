@@ -1,0 +1,55 @@
+
+*{
+    box-sizing: border-box;
+}
+
+.topbar{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    align-items:center;
+    background-color:rgb(208, 218, 233);
+    padding:30px;
+    color:rgb(83, 82, 88);
+    text-shadow: 3px 1px #efeaf7;
+    #name{
+        flex-grow: 0.7;
+        font-size:40px;
+    }
+    #about{
+        font-size:27px;
+    }
+    #projects{
+        font-size:27px;
+    }
+}
+
+.divider{
+    padding:3px;
+}
+
+.header{
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+    background-color:rgb(200, 189, 247);
+    .name{
+        color:white;
+        font-size:25px;
+        text-shadow: 1px 1px #6b5897;
+    }
+    .bio{
+        color:rgb(255, 255, 255);
+        text-shadow: 1px 1px #6b5897;
+    }
+    img{
+        background-color:white;
+        padding:5px;
+        border-radius:50%;
+    }
+}
+
+// .name{
+//     color: pink;
+//     background: blue;
+// }
