@@ -1,4 +1,10 @@
 
+// global vars
+:root{
+    --buttonColor: rgb(220, 200, 223);
+    --buttonShadow: rgb(165, 135, 172);
+}
+
 *{
     box-sizing: border-box;
 }
@@ -13,14 +19,63 @@
     color:rgb(83, 82, 88);
     text-shadow: 3px 1px #efeaf7;
     #name{
-        flex-grow: 0.7;
+        display:flex;
         font-size:40px;
+        margin-right: 50px;
+    }
+    #name:hover{
+        font-size:43px;
+        color: rgb(158, 152, 184);
+    }
+    #welcome{
+        display:flex;
+        position:relative;
+        
+        
     }
     #about{
+        // making the position relative allows the button
+        // to go down when clicked without moving the whole page
+        position:relative;
+        display:flex;
+        background-color:var(--buttonColor);
         font-size:27px;
+        padding: 15px;
+        border-radius: 12%;
+        box-shadow: 0px 4px var(--buttonShadow);
+        -moz-box-shadow: 0px 4px var(--buttonShadow);
+        -webkit-box-shadow: 0px 4px var(--buttonShadow);
+    }
+    #about:hover{
+        color: rgb(158, 152, 184);
+        cursor:pointer;
+    }
+    // clicking the button makes it appear to go down
+    #about:active{
+        box-shadow: 0px 0px pink;
+        -moz-box-shadow: 0px 0px pink;
+        -webkit-box-shadow: 0px 0px pink;
+        top: 4px;
     }
     #projects{
+        position:relative;
         font-size:27px;
+        background-color:var(--buttonColor);
+        padding: 15px;
+        border-radius: 12%;
+        box-shadow: 0px 4px var(--buttonShadow);
+        -moz-box-shadow: 0px 4px var(--buttonShadow);
+        -webkit-box-shadow: 0px 4px var(--buttonShadow);
+    }
+    #projects:hover{
+        color: rgb(158, 152, 184);
+        cursor:pointer;
+    }
+    #projects:active{
+        box-shadow: 0px 0px pink;
+        -moz-box-shadow: 0px 0px pink;
+        -webkit-box-shadow: 0px 0px pink;
+        top: 4px;
     }
 }
 
@@ -49,7 +104,3 @@
     }
 }
 
-// .name{
-//     color: pink;
-//     background: blue;
-// }

@@ -1,3 +1,7 @@
+:root {
+  --buttonColor: rgb(220, 200, 223);
+  --buttonShadow: rgb(165, 135, 172); }
+
 * {
   box-sizing: border-box; }
 
@@ -11,12 +15,50 @@
   color: #535258;
   text-shadow: 3px 1px #efeaf7; }
   .topbar #name {
-    flex-grow: 0.7;
-    font-size: 40px; }
+    display: flex;
+    font-size: 40px;
+    margin-right: 50px; }
+  .topbar #name:hover {
+    font-size: 43px;
+    color: #9e98b8; }
+  .topbar #welcome {
+    display: flex;
+    position: relative; }
   .topbar #about {
-    font-size: 27px; }
+    position: relative;
+    display: flex;
+    background-color: var(--buttonColor);
+    font-size: 27px;
+    padding: 15px;
+    border-radius: 12%;
+    box-shadow: 0px 4px var(--buttonShadow);
+    -moz-box-shadow: 0px 4px var(--buttonShadow);
+    -webkit-box-shadow: 0px 4px var(--buttonShadow); }
+  .topbar #about:hover {
+    color: #9e98b8;
+    cursor: pointer; }
+  .topbar #about:active {
+    box-shadow: 0px 0px pink;
+    -moz-box-shadow: 0px 0px pink;
+    -webkit-box-shadow: 0px 0px pink;
+    top: 4px; }
   .topbar #projects {
-    font-size: 27px; }
+    position: relative;
+    font-size: 27px;
+    background-color: var(--buttonColor);
+    padding: 15px;
+    border-radius: 12%;
+    box-shadow: 0px 4px var(--buttonShadow);
+    -moz-box-shadow: 0px 4px var(--buttonShadow);
+    -webkit-box-shadow: 0px 4px var(--buttonShadow); }
+  .topbar #projects:hover {
+    color: #9e98b8;
+    cursor: pointer; }
+  .topbar #projects:active {
+    box-shadow: 0px 0px pink;
+    -moz-box-shadow: 0px 0px pink;
+    -webkit-box-shadow: 0px 0px pink;
+    top: 4px; }
 
 .divider {
   padding: 3px; }
