@@ -1,32 +1,41 @@
 :root {
   --buttonColor: rgb(220, 200, 223);
-  --buttonShadow: rgb(165, 135, 172); }
+  --buttonShadow: rgb(165, 135, 172);
+  --mainText: rgb(83, 77, 116); }
 
 * {
   box-sizing: border-box; }
 
 .topbar {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
   background-color: #d0dae9;
   padding: 30px;
-  color: #535258;
+  color: var(--mainText);
   text-shadow: 3px 1px #efeaf7; }
   .topbar #name {
-    display: flex;
     font-size: 40px;
     margin-right: 50px; }
   .topbar #name:hover {
     font-size: 43px;
-    color: #9e98b8; }
+    color: #9e98b8;
+    cursor: pointer; }
   .topbar #welcome {
-    display: flex;
+    position: relative;
+    margin-right: auto;
+    display: none;
+    font-size: 32px;
+    color: white;
+    text-shadow: 0px 0px #efeaf7; }
+  .topbar #emptyspace {
     position: relative; }
   .topbar #about {
     position: relative;
-    display: flex;
+    margin-left: auto;
+    margin-right: 30px;
     background-color: var(--buttonColor);
     font-size: 27px;
     padding: 15px;
@@ -44,6 +53,7 @@
     top: 4px; }
   .topbar #projects {
     position: relative;
+    margin-right: 20px;
     font-size: 27px;
     background-color: var(--buttonColor);
     padding: 15px;
