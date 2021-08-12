@@ -1,7 +1,10 @@
 :root {
   --buttonColor: rgb(220, 200, 223);
   --buttonShadow: rgb(165, 135, 172);
-  --mainText: rgb(83, 77, 116); }
+  --mainText: rgb(83, 77, 116);
+  --topBarColor: rgb(208, 218, 233);
+  --headerColor: rgb(200, 189, 247);
+  --projDetailsBack:rgb(236, 232, 243); }
 
 * {
   box-sizing: border-box; }
@@ -12,7 +15,7 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  background-color: #d0dae9;
+  background-color: var(--topBarColor);
   padding: 30px;
   color: var(--mainText);
   text-shadow: 3px 1px #efeaf7; }
@@ -77,7 +80,7 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  background-color: #c8bdf7; }
+  background-color: var(--headerColor); }
   .header .name {
     color: white;
     font-size: 25px;
@@ -89,3 +92,49 @@
     background-color: white;
     padding: 5px;
     border-radius: 50%; }
+
+.title {
+  color: var(--mainText);
+  text-align: center;
+  font-size: 30px;
+  text-shadow: 2px 1px white;
+  padding: 20px; }
+
+.descriptionBox {
+  background-color: var(--projDetailsBack);
+  border: solid 20px var(--topBarColor);
+  border-radius: 5px;
+  font-size: 18px;
+  color: var(--mainText);
+  padding: 18px; }
+
+#aboutSection {
+  background-color: var(--topBarColor); }
+  #aboutSection #aboutDescription {
+    text-align: center;
+    padding: 40px; }
+    #aboutSection #aboutDescription .awardTitle {
+      font-weight: bold; }
+
+#projectsSection {
+  background-color: var(--topBarColor); }
+  #projectsSection .project {
+    display: grid; }
+    #projectsSection .project .projectTitle {
+      padding-left: 20px;
+      color: #605d68;
+      font-size: 25px; }
+    #projectsSection .project .projectLink {
+      font-size: 20px; }
+      #projectsSection .project .projectLink a:hover {
+        color: #a4caa4;
+        font-size: 23px; }
+      #projectsSection .project .projectLink a:active {
+        color: #dc9ce2; }
+    #projectsSection .project .projectDetails {
+      background-color: var(--projDetailsBack);
+      border: solid 20px var(--topBarColor);
+      border-radius: 5px;
+      font-size: 18px;
+      color: var(--mainText);
+      padding: 18px; }

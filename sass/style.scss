@@ -4,6 +4,9 @@
     --buttonColor: rgb(220, 200, 223);
     --buttonShadow: rgb(165, 135, 172);
     --mainText: rgb(83, 77, 116);
+    --topBarColor: rgb(208, 218, 233);
+    --headerColor: rgb(200, 189, 247);
+    --projDetailsBack:rgb(236, 232, 243);
 }
 
 *{
@@ -16,7 +19,7 @@
     flex-direction:row;
     justify-content:space-around;
     align-items:center;
-    background-color:rgb(208, 218, 233);
+    background-color:var(--topBarColor);
     padding:30px;
     color:var(--mainText);
     text-shadow: 3px 1px #efeaf7;
@@ -96,7 +99,7 @@
     display:flex;
     flex-direction:column;
     text-align:center;
-    background-color:rgb(200, 189, 247);
+    background-color:var(--headerColor);
     .name{
         color:white;
         font-size:25px;
@@ -111,5 +114,68 @@
         padding:5px;
         border-radius:50%;
     }
+}
+
+.title{
+    color:var(--mainText);
+        text-align:center;
+        font-size:30px;
+        text-shadow: 2px 1px white;
+        padding:20px;
+}
+
+.descriptionBox{
+    background-color:var(--projDetailsBack);
+    border: solid 20px var(--topBarColor);
+    border-radius:5px;
+    font-size:18px;
+    color: var(--mainText);
+    padding: 18px;
+}
+
+#aboutSection{
+    background-color:var(--topBarColor);
+    #aboutDescription{
+        text-align:center;
+        padding:40px;
+        
+        .awardTitle{
+            font-weight:bold;
+        }
+    }   
+}
+
+#projectsSection{
+
+    background-color:var(--topBarColor);
+    .project{
+        display:grid;
+        .projectTitle{
+            padding-left:20px;
+            color: rgb(96, 93, 104);
+            font-size:25px;
+        }
+        .projectLink{
+            font-size:20px;
+            a:hover{
+                color:rgb(164, 202, 164);
+                font-size:23px;
+            }
+            a:active{
+                color:rgb(220, 156, 226);
+            }
+        }
+        .projectDetails{
+            background-color:var(--projDetailsBack);
+            border: solid 20px var(--topBarColor);
+            border-radius:5px;
+            font-size:18px;
+            color: var(--mainText);
+            padding: 18px;
+        }
+    }
+
+
+    
 }
 
