@@ -138,3 +138,12 @@
       font-size: 18px;
       color: var(--mainText);
       padding: 18px; }
+
+#websiteDetails {
+  background-color: var(--projDetailsBack);
+  padding: 20px;
+  text-align: center; }
+  #websiteDetails p {
+    font-size: 18px; }
+  #websiteDetails a {
+    font-size: 18px; }
