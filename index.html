@@ -1,50 +1,77 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <title>Home</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
     <body>
 
-        <div class="topbar">
-            <div id="name">
-                Caroline Guzylak 
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-sm">
+            <div class="container-fluid" id="topbar">
+                    <div class="navbar-header" id="name">
+                        Caroline Guzylak 
+                        <div id="welcome">
+                            Welcome!
+                        </div>
+                    </div>
+                    <ul class="navbar-nav">
+                        <li>
+                            <a class="pushableButton" id="about" href="#aboutSection">About</a>
+                        </li>
+                        <li>
+                            <a class="pushableButton" id="resume" href="">Resume</a>
+                        </li>
+                        <li>
+                            <a class="pushableButton" id="projects" href="#projectsSection">Projects</a>
+                        </li>
+                    </ul>
             </div>
-            <div id="welcome">
-                Welcome!
-            </div>
-            <div id="emptyspace">
+        </nav>
 
-            </div>
-            <div id="about">
-                <a href="#aboutSection">About</a>
-                <!-- About -->
-            </div>
-            <div id="projects">
-                <a href="#projectsSection">Projects</a>
-                <!-- Projects -->
-            </div>
-        </div>
+
 
         <div class="divider"></div>
 
+
+
+        <!-- INTRO HEADER WITH PROFILE PIC -->
         <div class="header">
-            <div class="name">
-                <h1>Caroline Guzylak</h1>
-            </div>
-            <div id="profilepic">
-                <img src="images/profile.jpg" height="300px"
-                width="300px">
-            </div>
-            <div class="bio">
-                <h3>Software Engineering Major at UCI</h3>
-            </div>
+            <div class="container">
+                <div class="row">
 
+                    <div id="intro" class="col-6">
+
+                        <div class="container">
+                            <div class="row">
+                                <p id="name">Caroline Guzylak</p>
+                            </div>
+                            <div class="row">
+                                <p id="bio">Informatics Major at UCI</h3pp>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-6">
+                        <div class="float-start">
+                            <img class="img-fluid" src="images/profile.jpg" alt="Caroline Guzylak Photo">
+                        </div>                      
+                    </div>
+
+                </div>
+            </div>
         </div>
 
+
+
+
         <div class="divider"></div>
+
+
 
         <div id="aboutSection">
             <div class="title">
@@ -53,9 +80,8 @@
             <div class="descriptionBox" id="aboutDescription">
                 <p>
                     Hello, my name is Caroline Guzylak.
-                    I am a Software Engineering Major
-                    with a minor in Digital Art at the University
-                    of California Irvine. 
+                    I am an Informatics Major
+                    at the University of California Irvine. 
                 </p>
                 <h3 id="skills">
                     Skills:
@@ -102,8 +128,7 @@
                         containing those ingredients will be generated 
                         (along with a complimentary meme).
                         Created using Javascript, HTML, CSS, and Edamam Recipe Database
-                        API.
-                        Created in Repl.it and uploaded to Devpost and Github.
+                        API. Created in Repl.it and uploaded to Devpost and Github.
                     </div>
                 </div>
             </div>

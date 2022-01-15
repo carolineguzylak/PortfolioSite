@@ -9,66 +9,36 @@
 * {
   box-sizing: border-box; }
 
-.topbar {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
+#topbar {
   background-color: var(--topBarColor);
-  padding: 30px;
   color: var(--mainText);
-  text-shadow: 3px 1px #efeaf7; }
-  .topbar #name {
-    font-size: 40px;
-    margin-right: 50px; }
-  .topbar #name:hover {
-    font-size: 43px;
+  text-shadow: 3px 1px #efeaf7;
+  padding: 20px; }
+  #topbar #name {
+    font-family: 'Merriweather', serif; }
+  #topbar #name:hover {
+    font-size: 30px;
     color: #9e98b8;
     cursor: pointer; }
-  .topbar #welcome {
-    position: relative;
-    margin-right: auto;
+  #topbar #welcome {
     display: none;
-    font-size: 32px;
     color: white;
-    text-shadow: 0px 0px #efeaf7; }
-  .topbar #emptyspace {
-    position: relative; }
-  .topbar #about {
+    text-shadow: 0px 0px #efeaf7;
+    font-family: 'Merriweather', serif; }
+  #topbar .pushableButton {
     position: relative;
-    margin-left: auto;
-    margin-right: 30px;
     background-color: var(--buttonColor);
-    font-size: 27px;
-    padding: 15px;
+    font-family: 'Merriweather', serif;
     border-radius: 12%;
+    padding: 15px;
+    margin: 15px;
     box-shadow: 0px 4px var(--buttonShadow);
     -moz-box-shadow: 0px 4px var(--buttonShadow);
     -webkit-box-shadow: 0px 4px var(--buttonShadow); }
-  .topbar #about:hover {
-    color: #9e98b8;
+  #topbar .pushableButton:hover {
     cursor: pointer; }
-  .topbar #about:active {
-    box-shadow: 0px 0px pink;
-    -moz-box-shadow: 0px 0px pink;
-    -webkit-box-shadow: 0px 0px pink;
-    top: 4px; }
-  .topbar #projects {
-    position: relative;
-    margin-right: 20px;
-    font-size: 27px;
-    background-color: var(--buttonColor);
-    padding: 15px;
-    border-radius: 12%;
-    box-shadow: 0px 4px var(--buttonShadow);
-    -moz-box-shadow: 0px 4px var(--buttonShadow);
-    -webkit-box-shadow: 0px 4px var(--buttonShadow); }
-  .topbar #projects:hover {
-    color: #9e98b8;
-    cursor: pointer; }
-  .topbar #projects:active {
-    box-shadow: 0px 0px pink;
+  #topbar .pushableButton:active {
+    box-shadow: 0px 0pxx pink;
     -moz-box-shadow: 0px 0px pink;
     -webkit-box-shadow: 0px 0px pink;
     top: 4px; }
@@ -80,23 +50,31 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  background-color: var(--headerColor); }
-  .header .name {
+  background-color: var(--headerColor);
+  padding-right: 40px; }
+  .header #intro {
     color: white;
-    font-size: 25px;
-    text-shadow: 1px 1px #6b5897; }
-  .header .bio {
-    color: white;
-    text-shadow: 1px 1px #6b5897; }
+    text-shadow: 1px 1px #6b5897;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .header #intro #name {
+      font-size: 7vmin; }
+    .header #intro #bio {
+      font-size: 5vmin; }
   .header img {
     background-color: white;
-    padding: 5px;
-    border-radius: 50%; }
+    max-height: 300px;
+    padding: 3px;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-bottom: 20px; }
 
 .title {
   color: var(--mainText);
   text-align: center;
   font-size: 30px;
+  font-family: 'Merriweather', serif;
   text-shadow: 2px 1px white;
   padding: 20px; }
 
@@ -105,6 +83,7 @@
   border: solid 20px var(--topBarColor);
   border-radius: 5px;
   font-size: 18px;
+  font-family: 'Merriweather', serif;
   color: var(--mainText);
   padding: 18px; }
 
@@ -123,9 +102,11 @@
     #projectsSection .project .projectTitle {
       padding-left: 20px;
       color: #605d68;
-      font-size: 25px; }
+      font-size: 25px;
+      font-family: 'Merriweather', serif; }
     #projectsSection .project .projectLink {
-      font-size: 20px; }
+      font-size: 20px;
+      font-family: 'Merriweather', serif; }
       #projectsSection .project .projectLink a:hover {
         color: #a4caa4;
         font-size: 23px; }
@@ -136,6 +117,7 @@
       border: solid 20px var(--topBarColor);
       border-radius: 5px;
       font-size: 18px;
+      font-family: 'Merriweather', serif;
       color: var(--mainText);
       padding: 18px; }
 
@@ -144,6 +126,8 @@
   padding: 20px;
   text-align: center; }
   #websiteDetails p {
-    font-size: 18px; }
+    font-size: 18px;
+    font-family: 'Merriweather', serif; }
   #websiteDetails a {
-    font-size: 18px; }
+    font-size: 18px;
+    font-family: 'Merriweather', serif; }
