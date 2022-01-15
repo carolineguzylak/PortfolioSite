@@ -66,31 +66,33 @@
 
 
 .header{
-    display:flex;
-    flex-direction:column;
-    text-align:center;
     background-color:var(--headerColor);
-    padding-right:40px;
     #intro {
         color:white;
         text-shadow: 1px 1px #6b5897;
         display: flex;
-        justify-content: center;
         align-items: center;
         #name{
-            font-size:7vmin;
+            font-size:4vmin;
+            text-align:center;
         }
         #bio {
-            font-size:5vmin;
+            font-size:3vmin;
+            text-align:center;
         }
     }
-    img{
-        background-color:white;
-        max-height:300px;
-        padding:3px;
-        border-radius:50%;
-        margin-top:20px;
-        margin-bottom:20px;
+    #profilePic {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        img{
+            background-color:white;
+            max-height:300px;
+            padding:3px;
+            border-radius:50%;
+            margin-top:20px;
+            margin-bottom:20px;
+        }
     }
 }
 

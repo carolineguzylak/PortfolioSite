@@ -47,28 +47,29 @@
   padding: 3px; }
 
 .header {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  background-color: var(--headerColor);
-  padding-right: 40px; }
+  background-color: var(--headerColor); }
   .header #intro {
     color: white;
     text-shadow: 1px 1px #6b5897;
     display: flex;
-    justify-content: center;
     align-items: center; }
     .header #intro #name {
-      font-size: 7vmin; }
+      font-size: 4vmin;
+      text-align: center; }
     .header #intro #bio {
-      font-size: 5vmin; }
-  .header img {
-    background-color: white;
-    max-height: 300px;
-    padding: 3px;
-    border-radius: 50%;
-    margin-top: 20px;
-    margin-bottom: 20px; }
+      font-size: 3vmin;
+      text-align: center; }
+  .header #profilePic {
+    display: flex;
+    justify-content: left;
+    align-items: center; }
+    .header #profilePic img {
+      background-color: white;
+      max-height: 300px;
+      padding: 3px;
+      border-radius: 50%;
+      margin-top: 20px;
+      margin-bottom: 20px; }
 
 .title {
   color: var(--mainText);
