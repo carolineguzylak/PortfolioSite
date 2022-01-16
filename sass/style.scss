@@ -236,11 +236,11 @@
     padding: 20px;
     text-align:center;
     p{
-        font-size:18px;
+        font-size:15px;
         font-family: 'Merriweather', serif;
     }
     a{
-        font-size: 18px;
+        font-size: 15px;
         font-family: 'Merriweather', serif;
     }
 }
@@ -251,7 +251,6 @@
     color:white;
     font-size:2vmin;
 }
-
 #nameHeaderResume{
     font-family: 'Merriweather', serif;
     color: var(--mainText);
@@ -262,7 +261,34 @@
 //PROJECTS HTML PAGE
 .projectBox{
     background-color: var(--topBarColor);
+    padding:20px;
+    .projectTitle{
+        font-family: 'Merriweather', serif;
+        font-size:3vmin;
+        color:rgb(69, 19, 109);
+    }
+    .projectDesc{ 
+        font-family: 'Merriweather', serif;
+        font-size:2.2vmin;
+        color:rgb(102, 75, 124);
+    }
+    .projectLink{
+        font-family: 'Merriweather', serif;
+        text-decoration:none;
+    }
 }
 
+
+//ABOUT HTML PAGE
+.aboutTitle{
+    font-family: 'Merriweather', serif;
+    font-size:3vmin;
+    color:rgb(69, 19, 109);
+}
+.aboutDesc{ 
+    font-family: 'Merriweather', serif;
+    font-size:2.4vmin;
+    color:rgb(102, 75, 124);
+}
 
 
