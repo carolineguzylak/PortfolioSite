@@ -22,6 +22,7 @@
     #name{
         // font-size:25px;
         font-family: 'Merriweather', serif;
+        color: var(--mainText);
     }
     #name:hover{
         font-size:30px;
@@ -37,8 +38,9 @@
     }
     .pushableButton {
         position:relative;
+        text-decoration:none;
+        color: var(--mainText);
         background-color:var(--buttonColor);
-        //font-size:27px;
         font-family: 'Merriweather', serif;
         border-radius: 12%;
         padding: 15px;
@@ -72,13 +74,14 @@
         text-shadow: 1px 1px #6b5897;
         display: flex;
         align-items: center;
+        font-family: 'Merriweather', serif;
         #name{
             font-size:4vmin;
             text-align:center;
         }
         #bio {
             font-size:3vmin;
-            text-align:center;
+            text-align:center; 
         }
     }
     #profilePic {
@@ -95,6 +98,8 @@
         }
     }
 }
+
+
 
 .title{
     color:var(--mainText);
@@ -114,6 +119,69 @@
     color: var(--mainText);
     padding: 18px;
 }
+
+
+.circleLink{
+    color:white;
+    text-decoration:none;
+    background-color:var(--buttonColor);
+    font-family: 'Merriweather', serif;
+    border: solid 3px white;
+    //makes buttons round
+    border-radius: 50%;
+    cursor:pointer;
+}
+
+
+.learnMore{ 
+    background-color:var(--headerColor);
+    color:white;
+    text-shadow: 1px 1px #6b5897;
+    text-align:center;
+    font-family: 'Merriweather', serif;
+    padding:20px;
+    #learnMoreText{
+        font-size:3vmin;
+    }
+    #linksrow{
+        padding:30px;
+    }
+    #ab{
+        padding:25px 14px;
+    }
+    #pb{
+        padding:26px 9px;
+    }
+    #rb{
+        padding:26px 9px;
+    }
+}
+
+.connect{ 
+    background-color:var(--headerColor);
+    color:white;
+    text-shadow: 1px 1px #6b5897;
+    text-align:center;
+    font-family: 'Merriweather', serif;
+    padding:20px;
+    #connectText{
+        font-size:3vmin;
+    }
+    #linksrow{
+        padding:30px;
+    }
+    #in{
+        padding:28px 23px;
+    }
+    #gm{
+        padding:28px 23px;
+    }
+    #gh{
+        padding:28px 23px;
+    }
+}
+
+
 
 #aboutSection{
     background-color:var(--topBarColor);
