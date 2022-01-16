@@ -7,23 +7,58 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
-    <body>
+    <body style="background-color:rgb(200, 189, 247);">
 
-        <div class="topbar">
-            <div id="pageName">
-                Projects
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-sm">
+            <div class="container-fluid" id="topbar">
+                    <div class="navbar-header">
+                        <a id="nameHeaderResume" href="index.html">Caroline Guzylak (return to home)</a>
+                    </div>
+                    <ul class="navbar-nav">
+                        <li>
+                            <a class="pushableButton" id="about" href="about.html">About</a>
+                        </li>
+                        <li>
+                            <a class="pushableButton" id="resume" href="resume.html">Resume</a>
+                        </li>
+                    </ul>
             </div>
-            <div id="emptyspace">
+        </nav>
+
+
+        <div class="container-fluid" id="resumeImage">
+            <div class="row">
+                <div class="projectBox" id="recipeGenerator">
+                    <p class="projectTitle">Recipe Generator Web App</p>
+                    <p class="projectDesc">Award winning web application for UCI Zothacks 2020 Hackathon. 
+                        Built with a team of four. Generates recipes based on ingredient input. App features 
+                        use of the Edamame Recipe API and was built using JavaScript, HTML, and CSS in Repl.it
+                         and Github. Contributed to project front-end, back-end and API connection.</p>
+                    <p><a href="https://devpost.com/software/we-have-food-at-home">Devpost Project Link</a></p>
+                    <a href="https://github.com/carolineguzylak/Recipe-Generator-Zothacks-2021">Github Project Link/Source Code</a>
+                </div>
             </div>
-            <div id="Home">
-                <a href="index.html">Home</a>
-                <!-- About -->
+
+            <div class="divider">     
             </div>
-            <div id="About">
-                <a href="#projectsSection">Projects</a>
-                <!-- Projects -->
+
+            <div class="row">
+                <div class="projectBox" id="dreamJournal">
+                    <p class="projectTitle">Dream Journal Web App</p>
+                    <p class="projectDesc">Developing a web application that allows users to keep a 
+                        customizable dream journal with dream descriptions, pre-set dream categories, 
+                        dream calendar, etc. Can provide insights on dream patterns and dream content
+                         by common keywords, categories, and frequencies.
+                        Building with Javascript, HTML, Sass, Bootstrap, jQuery, and Node/Express.js
+                         VSCode and Github.</p>
+                    <a href="https://github.com/carolineguzylak/Dream-Journal-Site">Github Project Link/Source Code</a>
+                </div>
             </div>
         </div>
+    
+    
+    
 
     </body>
 </html>

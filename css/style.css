@@ -181,3 +181,16 @@
   #websiteDetails a {
     font-size: 18px;
     font-family: 'Merriweather', serif; }
+
+#resumeDownload {
+  margin: 40px;
+  color: white;
+  font-size: 2vmin; }
+
+#nameHeaderResume {
+  font-family: 'Merriweather', serif;
+  color: var(--mainText);
+  text-decoration: none; }
+
+.projectBox {
+  background-color: var(--topBarColor); }

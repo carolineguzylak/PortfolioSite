@@ -21,7 +21,7 @@
     padding: 20px;
     #name{
         // font-size:25px;
-        font-family: 'Merriweather', serif;
+        font-family: 'Merriweather', serif; 
         color: var(--mainText);
     }
     #name:hover{
@@ -244,3 +244,25 @@
         font-family: 'Merriweather', serif;
     }
 }
+
+// RESUME HTML PAGE
+#resumeDownload {
+    margin:40px;
+    color:white;
+    font-size:2vmin;
+}
+
+#nameHeaderResume{
+    font-family: 'Merriweather', serif;
+    color: var(--mainText);
+    text-decoration:none;
+}
+
+
+//PROJECTS HTML PAGE
+.projectBox{
+    background-color: var(--topBarColor);
+}
+
+
+
