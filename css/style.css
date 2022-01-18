@@ -4,7 +4,10 @@
   --mainText: rgb(83, 77, 116);
   --topBarColor: rgb(208, 218, 233);
   --headerColor: rgb(200, 189, 247);
-  --projDetailsBack:rgb(236, 232, 243); }
+  --projDetailsBack:rgb(236, 232, 243);
+  --mainFont: 'Roboto Slab';
+  --secondaryFont: 'Raleway';
+  --finalFont: serif; }
 
 * {
   box-sizing: border-box; }
@@ -15,7 +18,7 @@
   text-shadow: 3px 1px #efeaf7;
   padding: 20px; }
   #topbar #name {
-    font-family: 'Merriweather', serif;
+    font-family: var(--mainFont), var(--secondaryFont), var(--finalFont);
     color: var(--mainText); }
   #topbar #name:hover {
     font-size: 30px;
@@ -25,13 +28,13 @@
     display: none;
     color: white;
     text-shadow: 0px 0px #efeaf7;
-    font-family: 'Merriweather', serif; }
+    font-family: var(--mainFont), var(--secondaryFont), var(--finalFont); }
   #topbar .pushableButton {
     position: relative;
     text-decoration: none;
     color: var(--mainText);
     background-color: var(--buttonColor);
-    font-family: 'Merriweather', serif;
+    font-family: var(--mainFont), var(--secondaryFont), var(--finalFont);
     border-radius: 12%;
     padding: 15px;
     margin: 15px;
@@ -56,7 +59,7 @@
     text-shadow: 1px 1px #6b5897;
     display: flex;
     align-items: center;
-    font-family: 'Merriweather', serif; }
+    font-family: var(--mainFont), var(--secondaryFont), var(--finalFont); }
     .header #intro #name {
       font-size: 4vmin;
       text-align: center; }
@@ -79,7 +82,7 @@
   color: var(--mainText);
   text-align: center;
   font-size: 30px;
-  font-family: 'Merriweather', serif;
+  font-family: var(--mainFont), var(--secondaryFont), var(--finalFont);
   text-shadow: 2px 1px white;
   padding: 20px; }
 
@@ -88,7 +91,7 @@
   border: solid 20px var(--topBarColor);
   border-radius: 5px;
   font-size: 18px;
-  font-family: 'Merriweather', serif;
+  font-family: var(--mainFont), var(--secondaryFont), var(--finalFont);
   color: var(--mainText);
   padding: 18px; }
 
@@ -96,7 +99,7 @@
   color: white;
   text-decoration: none;
   background-color: var(--buttonColor);
-  font-family: 'Merriweather', serif;
+  font-family: var(--mainFont), var(--secondaryFont), var(--finalFont);
   border: solid 3px white;
   border-radius: 50%;
   cursor: pointer; }
@@ -106,7 +109,7 @@
   color: white;
   text-shadow: 1px 1px #6b5897;
   text-align: center;
-  font-family: 'Merriweather', serif;
+  font-family: var(--mainFont), var(--secondaryFont), var(--finalFont);
   padding: 20px; }
   .learnMore #learnMoreText {
     font-size: 3vmin; }
@@ -124,7 +127,7 @@
   color: white;
   text-shadow: 1px 1px #6b5897;
   text-align: center;
-  font-family: 'Merriweather', serif;
+  font-family: var(--mainFont), var(--secondaryFont), var(--finalFont);
   padding: 20px; }
   .connect #connectText {
     font-size: 3vmin; }
@@ -153,10 +156,10 @@
       padding-left: 20px;
       color: #605d68;
       font-size: 25px;
-      font-family: 'Merriweather', serif; }
+      font-family: var(--mainFont), var(--secondaryFont), var(--finalFont); }
     #projectsSection .project .projectLink {
       font-size: 20px;
-      font-family: 'Merriweather', serif; }
+      font-family: var(--mainFont), var(--secondaryFont), var(--finalFont); }
       #projectsSection .project .projectLink a:hover {
         color: #a4caa4;
         font-size: 23px; }
@@ -167,7 +170,7 @@
       border: solid 20px var(--topBarColor);
       border-radius: 5px;
       font-size: 18px;
-      font-family: 'Merriweather', serif;
+      font-family: var(--mainFont), var(--secondaryFont), var(--finalFont);
       color: var(--mainText);
       padding: 18px; }
 
@@ -177,10 +180,10 @@
   text-align: center; }
   #websiteDetails p {
     font-size: 15px;
-    font-family: 'Merriweather', serif; }
+    font-family: var(--mainFont), var(--secondaryFont), var(--finalFont); }
   #websiteDetails a {
     font-size: 15px;
-    font-family: 'Merriweather', serif; }
+    font-family: var(--mainFont), var(--secondaryFont), var(--finalFont); }
 
 #resumeDownload {
   margin: 40px;
@@ -188,7 +191,7 @@
   font-size: 2vmin; }
 
 #nameHeaderResume {
-  font-family: 'Merriweather', serif;
+  font-family: var(--mainFont), var(--secondaryFont), var(--finalFont);
   color: var(--mainText);
   text-decoration: none; }
 
@@ -196,23 +199,23 @@
   background-color: var(--topBarColor);
   padding: 20px; }
   .projectBox .projectTitle {
-    font-family: 'Merriweather', serif;
+    font-family: var(--mainFont), var(--secondaryFont), var(--finalFont);
     font-size: 3vmin;
     color: #45136d; }
   .projectBox .projectDesc {
-    font-family: 'Merriweather', serif;
+    font-family: var(--mainFont), var(--secondaryFont), var(--finalFont);
     font-size: 2.2vmin;
     color: #664b7c; }
   .projectBox .projectLink {
-    font-family: 'Merriweather', serif;
+    font-family: var(--mainFont), var(--secondaryFont), var(--finalFont);
     text-decoration: none; }
 
 .aboutTitle {
-  font-family: 'Merriweather', serif;
+  font-family: var(--mainFont), var(--secondaryFont), var(--finalFont);
   font-size: 3vmin;
   color: #45136d; }
 
 .aboutDesc {
-  font-family: 'Merriweather', serif;
+  font-family: var(--mainFont), var(--secondaryFont), var(--finalFont);
   font-size: 2.4vmin;
   color: #664b7c; }

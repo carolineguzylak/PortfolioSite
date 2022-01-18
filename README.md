@@ -16,6 +16,7 @@ Sources:
 - Bootstrap navbar general syntax https://www.w3schools.com/bootstrap/bootstrap_navbar.asp and https://www.w3schools.com/bootstrap5/bootstrap_navbar.php 
 - StackOverflow on syntax for responsive text size: https://stackoverflow.com/questions/15649244/responsive-font-size-in-css 
 - How to apply email link to href from https://www.tutorialspoint.com/html/html_email_links.htm 
+- Bootstrap navbar tutorial https://getbootstrap.com/docs/5.0/components/navbar/
 
 The Complete 2022 Web Development Course by Development Island UK on Udemy: https://www.udemy.com/course/complete-web-development-course/ 
 
