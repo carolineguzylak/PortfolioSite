@@ -18,10 +18,10 @@
   text-shadow: 3px 1px #efeaf7;
   padding: 20px; }
   #topbar #name {
+    font-size: 20px;
     font-family: var(--mainFont), var(--secondaryFont), var(--finalFont);
     color: var(--mainText); }
   #topbar #name:hover {
-    font-size: 30px;
     color: #9e98b8;
     cursor: pointer; }
   #topbar #welcome {
@@ -38,6 +38,7 @@
     border-radius: 12%;
     padding: 15px;
     margin: 15px;
+    max-width: 100px;
     box-shadow: 0px 4px var(--buttonShadow);
     -moz-box-shadow: 0px 4px var(--buttonShadow);
     -webkit-box-shadow: 0px 4px var(--buttonShadow); }
@@ -53,47 +54,22 @@
   padding: 3px; }
 
 .header {
-  background-color: var(--headerColor); }
+  background-color: var(--headerColor);
+  display: flex;
+  justify-content: center;
+  align-items: center; }
   .header #intro {
     color: white;
     text-shadow: 1px 1px #6b5897;
-    display: flex;
-    align-items: center;
-    font-family: var(--mainFont), var(--secondaryFont), var(--finalFont); }
-    .header #intro #name {
-      font-size: 4vmin;
-      text-align: center; }
-    .header #intro #bio {
-      font-size: 3vmin;
-      text-align: center; }
-  .header #profilePic {
-    display: flex;
-    justify-content: left;
-    align-items: center; }
-    .header #profilePic img {
-      background-color: white;
-      max-height: 300px;
-      padding: 3px;
-      border-radius: 50%;
-      margin-top: 20px;
-      margin-bottom: 20px; }
-
-.title {
-  color: var(--mainText);
-  text-align: center;
-  font-size: 30px;
-  font-family: var(--mainFont), var(--secondaryFont), var(--finalFont);
-  text-shadow: 2px 1px white;
-  padding: 20px; }
-
-.descriptionBox {
-  background-color: var(--projDetailsBack);
-  border: solid 20px var(--topBarColor);
-  border-radius: 5px;
-  font-size: 18px;
-  font-family: var(--mainFont), var(--secondaryFont), var(--finalFont);
-  color: var(--mainText);
-  padding: 18px; }
+    font-family: var(--mainFont), var(--secondaryFont), var(--finalFont);
+    text-align: center; }
+  .header #profilePic img {
+    background-color: white;
+    max-height: 270px;
+    padding: 3px;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-bottom: 20px; }
 
 .circleLink {
   color: white;
@@ -111,16 +87,14 @@
   text-align: center;
   font-family: var(--mainFont), var(--secondaryFont), var(--finalFont);
   padding: 20px; }
-  .learnMore #learnMoreText {
-    font-size: 3vmin; }
   .learnMore #linksrow {
-    padding: 30px; }
+    padding-top: 30px; }
   .learnMore #ab {
-    padding: 25px 14px; }
+    padding: 17px 6px; }
   .learnMore #pb {
-    padding: 26px 9px; }
+    padding: 18px 1px; }
   .learnMore #rb {
-    padding: 26px 9px; }
+    padding: 19px 1px; }
 
 .connect {
   background-color: var(--headerColor);
@@ -129,66 +103,29 @@
   text-align: center;
   font-family: var(--mainFont), var(--secondaryFont), var(--finalFont);
   padding: 20px; }
-  .connect #connectText {
-    font-size: 3vmin; }
   .connect #linksrow {
-    padding: 30px; }
+    padding-top: 30px; }
   .connect #in {
-    padding: 28px 23px; }
+    padding: 14px 14px; }
   .connect #gm {
-    padding: 28px 23px; }
+    padding: 14px 14px; }
   .connect #gh {
-    padding: 28px 23px; }
-
-#aboutSection {
-  background-color: var(--topBarColor); }
-  #aboutSection #aboutDescription {
-    text-align: center;
-    padding: 40px; }
-    #aboutSection #aboutDescription .awardTitle {
-      font-weight: bold; }
-
-#projectsSection {
-  background-color: var(--topBarColor); }
-  #projectsSection .project {
-    display: grid; }
-    #projectsSection .project .projectTitle {
-      padding-left: 20px;
-      color: #605d68;
-      font-size: 25px;
-      font-family: var(--mainFont), var(--secondaryFont), var(--finalFont); }
-    #projectsSection .project .projectLink {
-      font-size: 20px;
-      font-family: var(--mainFont), var(--secondaryFont), var(--finalFont); }
-      #projectsSection .project .projectLink a:hover {
-        color: #a4caa4;
-        font-size: 23px; }
-      #projectsSection .project .projectLink a:active {
-        color: #dc9ce2; }
-    #projectsSection .project .projectDetails {
-      background-color: var(--projDetailsBack);
-      border: solid 20px var(--topBarColor);
-      border-radius: 5px;
-      font-size: 18px;
-      font-family: var(--mainFont), var(--secondaryFont), var(--finalFont);
-      color: var(--mainText);
-      padding: 18px; }
+    padding: 14px 14px; }
 
 #websiteDetails {
   background-color: var(--projDetailsBack);
   padding: 20px;
   text-align: center; }
   #websiteDetails p {
-    font-size: 15px;
+    font-size: 10px;
     font-family: var(--mainFont), var(--secondaryFont), var(--finalFont); }
   #websiteDetails a {
-    font-size: 15px;
+    font-size: 10px;
     font-family: var(--mainFont), var(--secondaryFont), var(--finalFont); }
 
 #resumeDownload {
   margin: 40px;
-  color: white;
-  font-size: 2vmin; }
+  color: white; }
 
 #nameHeaderResume {
   font-family: var(--mainFont), var(--secondaryFont), var(--finalFont);
@@ -200,11 +137,9 @@
   padding: 20px; }
   .projectBox .projectTitle {
     font-family: var(--mainFont), var(--secondaryFont), var(--finalFont);
-    font-size: 3vmin;
     color: #45136d; }
   .projectBox .projectDesc {
     font-family: var(--mainFont), var(--secondaryFont), var(--finalFont);
-    font-size: 2.2vmin;
     color: #664b7c; }
   .projectBox .projectLink {
     font-family: var(--mainFont), var(--secondaryFont), var(--finalFont);
@@ -212,10 +147,8 @@
 
 .aboutTitle {
   font-family: var(--mainFont), var(--secondaryFont), var(--finalFont);
-  font-size: 3vmin;
   color: #45136d; }
 
 .aboutDesc {
   font-family: var(--mainFont), var(--secondaryFont), var(--finalFont);
-  font-size: 2.4vmin;
   color: #664b7c; }

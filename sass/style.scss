@@ -23,7 +23,7 @@
     text-shadow: 3px 1px #efeaf7;
     padding: 20px;
     #name{
-        // font-size:25px;
+        font-size:20px;
         font-family: var(--mainFont), var(--secondaryFont), var(--finalFont);
         color: var(--mainText);
     }
@@ -41,12 +41,13 @@
     .pushableButton {
         position:relative;
         text-decoration:none;
-        color: var(--mainText);
+        color: var(--mainText); 
         background-color:var(--buttonColor);
         font-family: var(--mainFont), var(--secondaryFont), var(--finalFont);
         border-radius: 12%;
         padding: 15px;
         margin: 15px;
+        max-width:100px;
         box-shadow: 0px 4px var(--buttonShadow);
         -moz-box-shadow: 0px 4px var(--buttonShadow);
         -webkit-box-shadow: 0px 4px var(--buttonShadow);
@@ -71,28 +72,19 @@
 
 .header{
     background-color:var(--headerColor);
+    display: flex;
+    justify-content:center;
+    align-items:center;
     #intro {
         color:white;
         text-shadow: 1px 1px #6b5897;
-        display: flex;
-        align-items: center;
         font-family: var(--mainFont), var(--secondaryFont), var(--finalFont);
-        #name{
-            font-size:4vmin;
-            text-align:center;
-        }
-        #bio {
-            font-size:3vmin;
-            text-align:center; 
-        }
+        text-align:center;
     }
     #profilePic {
-        display: flex;
-        justify-content: left;
-        align-items: center;
         img{
             background-color:white;
-            max-height:300px;
+            max-height:270px;
             padding:3px;
             border-radius:50%;
             margin-top:20px;
@@ -103,33 +95,12 @@
 
 
 
-.title{
-    color:var(--mainText);
-        text-align:center;
-        font-size:30px;
-        font-family: var(--mainFont), var(--secondaryFont), var(--finalFont);
-        text-shadow: 2px 1px white;
-        padding:20px;
-}
-
-.descriptionBox{
-    background-color:var(--projDetailsBack);
-    border: solid 20px var(--topBarColor);
-    border-radius:5px;
-    font-size:18px;
-    font-family: var(--mainFont), var(--secondaryFont), var(--finalFont);
-    color: var(--mainText);
-    padding: 18px;
-}
-
-
 .circleLink{
     color:white;
     text-decoration:none;
     background-color:var(--buttonColor);
     font-family: var(--mainFont), var(--secondaryFont), var(--finalFont);
     border: solid 3px white;
-    //makes buttons round
     border-radius: 50%;
     cursor:pointer;
 }
@@ -142,20 +113,17 @@
     text-align:center;
     font-family: var(--mainFont), var(--secondaryFont), var(--finalFont);
     padding:20px;
-    #learnMoreText{
-        font-size:3vmin;
-    }
     #linksrow{
-        padding:30px;
+        padding-top:30px;
     }
     #ab{
-        padding:25px 14px;
+        padding:17px 6px;
     }
     #pb{
-        padding:26px 9px;
+        padding:18px 1px;
     }
     #rb{
-        padding:26px 9px;
+        padding:19px 1px;
     }
 }
 
@@ -166,94 +134,46 @@
     text-align:center;
     font-family: var(--mainFont), var(--secondaryFont), var(--finalFont);
     padding:20px;
-    #connectText{
-        font-size:3vmin;
-    }
     #linksrow{
-        padding:30px;
+        padding-top:30px;
     }
     #in{
-        padding:28px 23px;
+        padding:14px 14px;
     }
     #gm{
-        padding:28px 23px;
+        padding:14px 14px;
     }
     #gh{
-        padding:28px 23px;
+        padding:14px 14px;
     }
 }
 
-
-
-#aboutSection{
-    background-color:var(--topBarColor);
-    #aboutDescription{
-        text-align:center;
-        padding:40px;
-        .awardTitle{
-            font-weight:bold;
-        }
-    }   
-}
-
-#projectsSection{
-
-    background-color:var(--topBarColor);
-    .project{
-        display:grid;
-        .projectTitle{
-            padding-left:20px;
-            color: rgb(96, 93, 104);
-            font-size:25px;
-            font-family: var(--mainFont), var(--secondaryFont), var(--finalFont);
-        }
-        .projectLink{
-            font-size:20px;
-            font-family: var(--mainFont), var(--secondaryFont), var(--finalFont);
-            a:hover{
-                color:rgb(164, 202, 164);
-                font-size:23px;
-            }
-            a:active{
-                color:rgb(220, 156, 226);
-            }
-        }
-        .projectDetails{
-            background-color:var(--projDetailsBack);
-            border: solid 20px var(--topBarColor);
-            border-radius:5px;
-            font-size:18px;
-            font-family: var(--mainFont), var(--secondaryFont), var(--finalFont);
-            color: var(--mainText);
-            padding: 18px;
-        }
-    }
-
-
-    
-}
 
 #websiteDetails{
     background-color: var(--projDetailsBack);
     padding: 20px;
     text-align:center;
     p{
-        font-size:15px;
+        font-size:10px;
         font-family: var(--mainFont), var(--secondaryFont), var(--finalFont);
     }
     a{
-        font-size: 15px;
+        font-size: 10px;
         font-family: var(--mainFont), var(--secondaryFont), var(--finalFont);
     }
 }
+
+
+// #pageTitle{
+
+// }
+
 
 // RESUME HTML PAGE
 #resumeDownload {
     margin:40px;
     color:white;
-    font-size:2vmin;
 }
-
 #nameHeaderResume{
     font-family: var(--mainFont), var(--secondaryFont), var(--finalFont);
     color: var(--mainText);
@@ -267,12 +187,10 @@
     padding:20px;
     .projectTitle{
         font-family: var(--mainFont), var(--secondaryFont), var(--finalFont);
-        font-size:3vmin;
         color:rgb(69, 19, 109);
     }
     .projectDesc{ 
         font-family: var(--mainFont), var(--secondaryFont), var(--finalFont);
-        font-size:2.2vmin;
         color:rgb(102, 75, 124);
     }
     .projectLink{
@@ -285,12 +203,10 @@
 //ABOUT HTML PAGE
 .aboutTitle{
     font-family: var(--mainFont), var(--secondaryFont), var(--finalFont);
-    font-size:3vmin;
     color:rgb(69, 19, 109);
 }
 .aboutDesc{ 
     font-family: var(--mainFont), var(--secondaryFont), var(--finalFont);
-    font-size:2.4vmin;
     color:rgb(102, 75, 124);
 }
 

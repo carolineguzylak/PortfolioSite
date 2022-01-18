@@ -13,6 +13,7 @@
     <body>
 
 
+        <!-- NAVBAR -->
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid" id="topbar">
                 <a class="navbar-brand" id="name">
@@ -21,51 +22,26 @@
                         Welcome!
                     </div>
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <!-- msauto moves the buttons to the right, meauto for left -->
+                    <!-- ms-auto moves the buttons to the right, me-auto for left -->
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link pushableButton" id="about" href="about.html">About</a>
+                            <a class="nav-link btn btn-md pushableButton" id="about" href="about.html">About</a> 
+                            <!-- <a href="#" class="btn btn-lg" tabindex="-1" role="button" aria-disabled="true">Primary link</a> -->
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link pushableButton" id="resume" href="resume.html">Resume</a>
+                            <a class="nav-link btn btn-md pushableButton" id="resume" href="resume.html">Resume</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link pushableButton" id="projects" href="projects.html">Projects</a>
+                            <a class="nav-link btn btn-md pushableButton" id="projects" href="projects.html">Projects</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
-
-        <!-- navbar
-        <nav class="navbar navbar-expand-sm">
-            <div class="container-fluid" id="topbar">
-                    <div class="navbar-header" id="name">
-                        Caroline Guzylak 
-                        <div id="welcome">
-                            Welcome!
-                        </div>
-                    </div>
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link pushableButton" id="about" href="about.html">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link pushableButton" id="resume" href="resume.html">Resume</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link pushableButton" id="projects" href="projects.html">Projects</a>
-                        </li>
-
-
-
-                    </ul>
-            </div>
-        </nav> -->
 
 
 
@@ -75,34 +51,19 @@
 
         <!-- INTRO HEADER WITH PROFILE PIC -->
         <div class="header">
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-2">
+            <div id="intro">
+                <div class="container">
+                    <div class="row">
+                        <h1 id="name">Caroline Guzylak</h1>
                     </div>
-
-                    <div id="intro" class="col-4">
-
-                        <div class="container">
-                            <div class="row">
-                                <p id="name">Caroline Guzylak</p>
-                            </div>
-                            <div class="row">
-                                <p id="bio">Informatics Major at UCI</h3pp>
-                            </div>
-                        </div>
-
+                    <div class="row">
+                        <h3 id="bio">Informatics Major at UCI</h3>
                     </div>
-
-                    <div id="profilePic" class="col-4">
-                        <img class="img-fluid" src="images/profile.jpg" alt="Caroline Guzylak Photo">                     
-                    </div>
-
-                    <div class="col-2">
-                    </div>
-
                 </div>
             </div>
+            <div id="profilePic">
+                <img class="img-fluid" src="images/profile.jpg" alt="Caroline Guzylak Photo">                     
+            </div>        
         </div>
 
 
@@ -110,49 +71,35 @@
         <div class="divider"></div>
 
 
-        <!-- LEARN MORE -->
         <div class="container-fluid learnMore">
             <div class="row">
-                <p id="learnMoreText">Learn more about me</p>
+                <h4>Learn more about me</h4>
             </div>
             <div id="linksrow" class="row">
-                    <div class="col-3"></div>
-    
-                    <div class="col-2">
-                        <a href="about.html" id="ab" class="circleLink">About</a>
-                    </div>
-                    <div class="col-2">
-                        <a href="projects.html" id="pb" class="circleLink">Projects</a>
-                    </div>
-                    <div class="col-2">
-                        <a href="resume.html" id="rb" class="circleLink">Resume</a>
-                    </div>
-    
-                    <div class="col-3"></div>
+                <nav>
+                    <a href="about.html" id="ab" class="btn btn-md circleLink">About</a>
+
+                    <a href="projects.html" id="pb" class="btn btn-md circleLink">Projects</a>
+
+                    <a href="resume.html" id="rb" class="btn btn-md circleLink">Resume</a>
+                </nav>
             </div>
         </div>
-
 
  
         <!-- Connect -->
         <div class="container-fluid connect">
             <div class="row">
-                <p id="connectText">Connect with me</p>
+                <h4>Connect with me</h4>
             </div>
             <div id="linksrow" class="row">
-                    <div class="col-3"></div>
-    
-                    <div class="col-2">
-                        <a href="https://www.linkedin.com/in/cguzylak/" id="in" class="circleLink"><img class="img-fluid" src="images/linkedin.svg" alt="LinkedIn"></a>  
-                    </div>
-                    <div class="col-2">
-                        <a href="https://github.com/carolineguzylak" id="gh" class="circleLink"><img class="img-fluid" src="images/github.svg" alt="Github"></a>
-                    </div>
-                    <div class="col-2">
-                        <a href="mailto: carolineguzylak@gmail.com" id="gm" class="circleLink"><img class="img-fluid" src="images/mail(1).svg" alt="Email"></a>
-                    </div>
-    
-                    <div class="col-3"></div>
+                    <nav>
+                        <a href="https://www.linkedin.com/in/cguzylak/" id="in" class="btn btn-md circleLink"><img class="img-fluid" src="images/linkedin.svg" alt="LinkedIn"></a>  
+                    
+                        <a href="https://github.com/carolineguzylak" id="gh" class="btn btn-md circleLink"><img class="img-fluid" src="images/github.svg" alt="Github"></a>
+                    
+                        <a href="mailto: carolineguzylak@gmail.com" id="gm" class="btn btn-md circleLink"><img class="img-fluid" src="images/mail(1).svg" alt="Email"></a>
+                    </nav>
             </div>
         </div>
         
