@@ -33,7 +33,6 @@
     }
     #welcome{
         display:none;
-        //font-size: 30px;
         color:white;
         text-shadow: 0px 0px #efeaf7;
         font-family: var(--mainFont), var(--secondaryFont), var(--finalFont);
@@ -49,17 +48,13 @@
         margin: 15px;
         max-width:100px;
         box-shadow: 0px 4px var(--buttonShadow);
-        -moz-box-shadow: 0px 4px var(--buttonShadow);
-        -webkit-box-shadow: 0px 4px var(--buttonShadow);
     }
     .pushableButton:hover{
         cursor:pointer;
     }
     // clicking the button makes it appear to go down
     .pushableButton:active{
-        box-shadow: 0px 0pxx pink;
-        -moz-box-shadow: 0px 0px pink;
-        -webkit-box-shadow: 0px 0px pink;
+        box-shadow: 0px 0px pink;
         top: 4px;
     }
 }
@@ -94,7 +89,6 @@
 }
 
 
-
 .circleLink{
     color:white;
     text-decoration:none;
@@ -103,6 +97,7 @@
     border: solid 3px white;
     border-radius: 50%;
     cursor:pointer;
+    margin:10px;
 }
 
 
@@ -113,7 +108,7 @@
     text-align:center;
     font-family: var(--mainFont), var(--secondaryFont), var(--finalFont);
     padding:20px;
-    #linksrow{
+    .linksrow{
         padding-top:30px;
     }
     #ab{
@@ -123,7 +118,7 @@
         padding:18px 1px;
     }
     #rb{
-        padding:19px 1px;
+        padding:18px 0px;
     }
 }
 
@@ -144,7 +139,7 @@
         padding:14px 14px;
     }
     #gh{
-        padding:14px 14px;
+        padding:15px 15px;
     }
 }
 
@@ -164,9 +159,11 @@
 }
 
 
-// #pageTitle{
-
-// }
+#pageTitle{
+    font-family: var(--mainFont), var(--secondaryFont), var(--finalFont);
+    color:rgb(69, 19, 109);
+    text-shadow: 1.5px 1.5px #ffffff;
+}
 
 
 // RESUME HTML PAGE
@@ -174,10 +171,10 @@
     margin:40px;
     color:white;
 }
-#nameHeaderResume{
-    font-family: var(--mainFont), var(--secondaryFont), var(--finalFont);
-    color: var(--mainText);
-    text-decoration:none;
+#resumeImage{
+    display: flex;
+    justify-content:center;
+    align-items:center;
 }
 
 
@@ -207,7 +204,7 @@
 }
 .aboutDesc{ 
     font-family: var(--mainFont), var(--secondaryFont), var(--finalFont);
-    color:rgb(102, 75, 124);
+    color:rgb(64, 40, 83);
 }
 
 
